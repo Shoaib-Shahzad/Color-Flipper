@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#fc00ff,#00dbde);
+}
+.Box{
+    position: relative;
+    width: 340px;
+    height: 400px;
+    background: rgba(255,255,255,0.1);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-right: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(24px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(#5CB8E4,rgba(19,247,7,0.83)) no-repeat;
+}
+.Flipper{
+    position: absolute;
+    top: 25%;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    user-select: none;
+
+}
+.MakingColor{
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    width: 100px;
+    background-color: #A5F1E9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+}
+.color-code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    cursor: none;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    user-select: none;
+
+}
+.btn{
+    position: absolute;
+    width: 72px;
+    height: 25px;
+    top: 76%;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    user-select: none;
+}
+.btn:hover{
+    transition: 0.6s linear;
+    background-color: rgba(132, 132, 132, 0.5);
+}
